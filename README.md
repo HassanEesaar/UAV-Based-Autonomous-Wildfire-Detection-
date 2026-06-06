@@ -90,18 +90,36 @@ Applied to increase dataset diversity:
 
 ---
 
+
 ## 📊 Results
 
-### YOLO Model Comparison
+### YOLO Model Comparison on Test Data
 
-| Model | mAP@50 | mAP@50-95 | Precision | Recall | Params (M) |
-|---|---|---|---|---|---|
-| **YOLOv12n** ⭐ | **—** | **—** | **—** | **—** | ~2.6 |
-| YOLOv11n | — | — | — | — | ~2.6 |
-| YOLOv10n | — | — | — | — | ~2.3 |
-| YOLOv9t | — | — | — | — | ~2.0 |
+| Model | Classes | P | R | mAP@50 | Inf (ms) | Params (M) | GFLOPs |
+|---|---|---|---|---|---|---|---|
+| **YOLOv12n** | All | 0.649 | 0.628 | 0.628 | **1.8** | 2.52 | **6.3** |
+| | Smoke | 0.698 | **0.729** | 0.729 | | | |
+| | Wildfire | 0.600 | 0.527 | 0.527 | | | |
+| **YOLOv11n** | All | **0.704** | 0.578 | 0.637 | 2.6 | 2.58 | 6.3 |
+| | Smoke | 0.754 | 0.674 | 0.721 | | | |
+| | Wildfire | **0.654** | 0.482 | 0.552 | | | |
+| **YOLOv10n** | All | 0.674 | 0.618 | 0.612 | 3.0 | 2.69 | 8.2 |
+| | Smoke | 0.726 | 0.718 | 0.720 | | | |
+| | Wildfire | 0.621 | 0.518 | 0.504 | | | |
+| **YOLOv9t** | All | 0.644 | **0.645** | 0.660 | 2.7 | **1.97** | 7.6 |
+| | Smoke | 0.713 | 0.713 | 0.758 | | | |
+| | Wildfire | 0.576 | **0.578** | **0.561** | | | |
+| **YOLOv8n** | All | 0.681 | 0.583 | 0.625 | 3.0 | 3.00 | 8.1 |
+| | Smoke | 0.735 | 0.680 | 0.710 | | | |
+| | Wildfire | 0.626 | 0.487 | 0.540 | | | |
+| **YOLOv6n** | All | 0.696 | 0.622 | **0.663** | 2.4 | 4.23 | 11.8 |
+| | Smoke | **0.794** | 0.723 | **0.777** | | | |
+| | Wildfire | 0.597 | 0.522 | 0.550 | | | |
+| **YOLOv5n** | All | 0.636 | 0.589 | 0.618 | 2.3 | 2.50 | 7.1 |
+| | Smoke | 0.691 | 0.669 | 0.709 | | | |
+| | Wildfire | 0.581 | 0.510 | 0.526 | | | |
 
-> *See paper for full quantitative results table.*
+> **Bold** values indicate best performance per column. P = Precision, R = Recall, Inf = Inference time per image.
 
 ---
 
@@ -214,13 +232,6 @@ wildfire-uav-detection/
 │   ├── evaluate.py                 # Evaluation & metrics
 │   └── run_video.py                # Video inference script
 │
-├── notebooks/
-│   ├── 01_dataset_exploration.ipynb
-│   ├── 02_yolo_training.ipynb
-│   ├── 03_vlm_analysis.ipynb
-│   └── 04_full_pipeline_demo.ipynb
-│
-├── results/                        # Output directory for runs
 ├── requirements.txt
 └── README.md
 ```
@@ -269,19 +280,6 @@ route = planner.plan(
 
 ---
 
-## 📝 Citation
-
-If you find this work useful, please cite:
-
-```bibtex
-@article{wildfire_uav_vlm_2025,
-  title   = {UAV-Based Autonomous Wildfire Detection and Contextual Awareness 
-             Using Vision-Language Models and LLM Fusion},
-  author  = {[Authors]},
-  journal = {[Venue]},
-  year    = {2025}
-}
-```
 
 ---
 
