@@ -45,13 +45,7 @@ The pipeline consists of five stages:
 
 ## 🎬 Qualitative Results
 
-### YouTube Video Scenarios (Real-World Testing)
 
-Five real-world wildfire scenarios sourced from YouTube were used for qualitative evaluation:
-
-![Video Scenarios](figures/youtube_video_scenarios_1.jpg)
-
-Each scenario shows: **Original Frame → Detection Frame → VLM Description → LLM Alert**
 
 ### YOLO Model Comparison
 
