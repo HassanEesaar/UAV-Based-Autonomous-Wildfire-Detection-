@@ -19,9 +19,9 @@
 
 This work presents an end-to-end pipeline for autonomous wildfire monitoring using Unmanned Aerial Vehicles (UAVs). Upon receiving an emergency call or during periodic monitoring, a drone is dispatched to the incident site, captures aerial footage, and the system:
 
-1. **Detects** smoke and wildfire via a fine-tuned **YOLOv12n** object detection model
-2. **Describes** the scene using **Moondream2**, a lightweight Vision-Language Model (VLM)
-3. **Generates** actionable emergency alerts and situation summaries using **GPT-4o mini**
+1. **Detects** 
+2. **Describes** 
+3. **Generates** 
 
 > **Key capability:** The system operates autonomously from dispatch to alert — with no human in the loop required for initial situation assessment.
 
