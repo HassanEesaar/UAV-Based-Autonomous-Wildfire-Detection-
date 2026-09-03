@@ -241,13 +241,13 @@ wildfire-uav-detection/
 - **Classes:** `smokes` (blue bounding box), `wildfire` (cyan bounding box)
 - **Input size:** 640×640
 
-### Vision-Language Model — Moondream2
+### Vision-Language Model  
 
 - **Model:** `vikhyatk/moondream2` (Hugging Face)
 - **Task:** Generate detailed scene descriptions from YOLO-detected frames
 - **Prompting:** Structured prompts asking for spatial information, fire intensity, and environmental context
 
-### LLM Alert Generation — GPT-4o mini
+### LLM Alert Generation  
 
 - **Model:** `gpt-4o-mini`
 - **Input:** YOLO detections + Moondream2 descriptions (up to 10 incident descriptions)
