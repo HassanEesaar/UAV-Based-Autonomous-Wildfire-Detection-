@@ -7,7 +7,7 @@
 ![YOLOv12](https://img.shields.io/badge/YOLOv12n-Detection-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-**An autonomous wildfire detection and alert framework combining drone-based surveillance, real-time object detection (YOLOv12n), Vision-Language Models (Moondream2), and LLM-powered emergency alerts (GPT-4o mini).**
+**An autonomous wildfire detection and alert framework combining drone-based surveillance, real-time object detection (YOLOv12n), Vision-Language Models , and LLM-powered emergency alerts .**
 
 [📄 Paper](#citation) · [🚀 Quick Start](#quick-start) · [📊 Results](#results) · [🗂 Dataset](#dataset)
 
