@@ -1,7 +1,5 @@
 """
-WildfirePipeline: end-to-end UAV wildfire detection and alert generation.
-
-Chains: YOLOv12n detection → Moondream2 VLM description → GPT-4o mini alert
+WildfirePipeline: end to end
 """
 
 import os
